@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>winbox-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.14436531,10.1341799 L5.14436531,14.4343704 L0.424196608,14.4343704 L0.424196608,23.9500529 L5.18470863,23.9500529 L5.18470863,47.7421376 L14.702851,47.7421376 L14.702851,23.9500529 L21.7629324,23.9500529 L22.6360772,14.4343704 L15.0717043,14.4343704 L15.0717043,10.6292487 C15.0717043,8.77849735 16.3050572,8.34675132 17.1724387,8.34675132 L22.5150472,8.34675132 L22.5150472,0.18962963 L15.1610359,0.160846561 C7.00015814,0.160846561 5.14436531,6.24270899 5.14436531,10.1341799 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="winbox-facebook">
+            <g id="Group-7-Copy" transform="translate(8.000000, 8.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <polygon id="Fill-5" fill="#FEFEFE" mask="url(#mask-2)" points="-8.39370097 56.5497566 31.4510931 56.5497566 31.4510931 -8.64677249 -8.39370097 -8.64677249"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

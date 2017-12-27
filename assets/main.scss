@@ -12,7 +12,22 @@ body {
   font-family: Helvetica, "Helvetica Neue", sans-serif;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Platform switcher */
+
+.platform-link-wrapper {
+  color: #aaa;
+}
+
+.platform-link--active {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd;
+}
 
 
 /* Win box itself */
@@ -29,27 +44,32 @@ body {
   width: 516px;
   height: 448px;
   margin: 0 auto;
-  background: #2DAAE1;
+  // background-color: #tr;
+  background-repeat: no-repeat;
+  background-position: 18px 12px;
+  // background-image: url(/assets/images/winbox-twitter.svg);
   position: relative;
 }
 
 .winbox-text {
   width: 100%;
   color: white;
-  padding: 0 48px;
+  padding: 0 40px 0 90px;
   text-align: left;
   font-size: 32px;
   line-height: 1.3;
   font-weight: bold;
-
   transform: translateY(-50%);
   top: 50%;
   position: relative;
+  background: url(/assets/images/winbox-quote.svg) no-repeat 32px 4px;
 }
 
 [contenteditable]:focus {
     outline: 0px solid transparent;
 }
+
+/* */
 
 /* Widget */
 
