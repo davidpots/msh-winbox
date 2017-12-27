@@ -1,0 +1,40 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "fonts",
+        "reset";
+
+/* Main stuff */
+
+body {
+  text-align: center;
+}
+
+/* Platform switcher */
+
+
+/* Win box itself */
+
+.winbox {
+  height: 564px;
+  width: 564px;
+  background: blue;
+  color: white;
+  padding: 64px;
+  margin: 0 auto;
+  text-align: left;
+  // box-sizing: border-box;
+}
+
+/* Widget */
+
+#atlwdg-trigger.atlwdg-TOP {
+  top: auto;
+  left: auto;
+  bottom: 0;
+  display: inline-block;
+  position: relative;
+  margin-top: 32px;
+
+}
