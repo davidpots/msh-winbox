@@ -35,7 +35,7 @@ a, a:visited {
 .winbox-guides {
   width: 668px;
   height: 668px;
-  background: url(/assets/images/winbox-guides.png) no-repeat;
+  background: url(images/winbox-guides.png) no-repeat;
   margin: 0 auto;
   padding-top: 76px;
 }
@@ -62,7 +62,7 @@ a, a:visited {
   transform: translateY(-50%);
   top: 50%;
   position: relative;
-  background: url(/assets/images/winbox-quote.svg) no-repeat 32px 4px;
+  background: url(images/winbox-quote.svg) no-repeat 32px 4px;
 }
 
 [contenteditable]:focus {
