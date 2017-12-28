@@ -1,4 +1,56 @@
+$(function() {
+    $("#btnSave").click(function() {
+        html2canvas($("#widget"), {
+            onrendered: function(canvas) {
+                // theCanvas = canvas;
+
+                // document.body.appendChild(canvas);
+                // var canvasX = canvas;
+
+                var dataURL = canvas.toDataURL();
+                console.log(dataURL);
+
+                $('#downloader').attr('href',dataURL);
+
+
+
+
+
+                // Convert and download as image
+                // Canvas2Image.saveAsPNG(canvas);
+                // $("#img-out").append(canvas);
+
+
+
+                // var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+
+                // function convertCanvasToImage(canvas) {
+                // 	var image = new Image();
+                // 	image.src = canvas.toDataURL("image/png");
+                // 	return image;
+                // }
+                //
+                // $('body').append(convertCanvasToImage(canvas));
+
+
+                // console.log(convertCanvasToImage(canvas));
+
+                // Clean up
+                // document.body.removeChild(canvas);
+            }
+        });
+    });
+                setTimeout(function() {
+                  $('#downloader').trigger('click');
+                },1000);
+});
+
+
 $(window).bind("load", function() {
+
+  $('#downloader').click(function(){
+    // return false;
+  });
 
     setTimeout(function() {
 

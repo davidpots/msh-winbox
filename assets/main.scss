@@ -63,6 +63,9 @@ a, a:visited {
   top: 50%;
   position: relative;
   background: url(images/winbox-quote.svg) no-repeat 32px 4px;
+  word-wrap: word-break;
+  white-space: pre-line;
+
 }
 
 [contenteditable]:focus {
@@ -80,4 +83,11 @@ a, a:visited {
   display: inline-block;
   position: relative;
   margin-top: 32px;
+}
+
+
+/* Image hackery */
+
+#img-out {
+  display:none;
 }

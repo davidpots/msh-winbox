@@ -12,6 +12,14 @@
 
   <!-- Javascript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <!-- Image rendering stuff via http://jsfiddle.net/8ypxW/3/ -->
+  <script src="http://www.nihilogic.dk/labs/canvas2image/base64.js"></script>
+  <script src="{{ "/assets/javascript/canvas2image.js" | relative_url }}"></script>
+  <script src="http://github.com/niklasvh/html2canvas/releases/download/0.4.1/html2canvas.js"></script>
+
+
+
   <script src="{{ "/assets/javascript/main.js" | relative_url }}"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
