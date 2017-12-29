@@ -79,10 +79,10 @@ a, a:visited {
 #atlwdg-trigger.atlwdg-TOP {
   top: auto;
   left: auto;
-  bottom: 0;
+  bottom: 16px;
+  right: 16px;
   display: inline-block;
-  position: relative;
-  margin-top: 32px;
+  position: absolute;
 }
 
 
@@ -90,4 +90,12 @@ a, a:visited {
 
 #img-out {
   display:none;
+}
+#downloader {
+  display:none;
+}
+#btnSave {
+  border: 3px double black;
+  padding: 10px;
+  background: #ffa;
 }
