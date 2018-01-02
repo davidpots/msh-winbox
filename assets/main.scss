@@ -76,6 +76,13 @@ a, a:visited {
 
 /* Widget */
 
+.jira-creator-link {
+  
+}
+
+#atlwdg-trigger {
+  display: none;
+}
 #atlwdg-trigger.atlwdg-TOP {
   top: auto;
   left: auto;
@@ -98,4 +105,5 @@ a, a:visited {
   border: 3px double black;
   padding: 10px;
   background: #ffa;
+  display: inline-block;
 }
