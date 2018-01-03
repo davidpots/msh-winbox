@@ -18,6 +18,7 @@
         // 'customfield_21201' : '19200', // ==== Review Rating : 5 ====
         // 'customfield_21201' : '19201', // ==== Review Rating : 4 ====
         // 'customfield_21201' : '19202', // ==== Review Rating : 3 ====
+        // var reviewUpgradedTo = 'customfield_21201';
 
 
 
@@ -85,16 +86,31 @@ $(window).bind("load", function() {
         },500);
 
         // auto trigger the Jira button
-            // setTimeout(function() {
-            //   $('#atlwdg-trigger')[0].click();
-            // },2000);
+            setTimeout(function() {
+              $('#atlwdg-trigger')[0].click();
+            },2000);
 
+    });
+
+    $('#submit-issue--review').click(function(){
+        $('#atlwdg-trigger')[0].click();
+        return false;
+    });
+
+
+    $('#hubT_submit').click(function(){
+        fieldValues[winType] = "19204";
+        fieldValues[winPlatform] = "19208";
+        updateFieldValues();
+        $('#atlwdg-trigger')[0].click();
+        return false;
     });
 
 
     // Set default platform on page load
     setTimeout(function() {
       $('.platform-link--facebook').trigger('click');
+      $('.star-rating--3').trigger('click');
     },10);
 
 
@@ -106,14 +122,14 @@ $(window).bind("load", function() {
         fieldValues[winPlatform] = "19207";
         updateFieldValues();
         $('.winbox-container').css('background-color','#3C5B9B');
-        $('.winbox-container').css('background-image','url(assets/images/winbox-facebook.svg)');
+        $('.winbox-container').css('background-image','url(../assets/images/winbox-facebook.svg)');
       }
 
       if ( $(this).hasClass('platform-link--twitter') ) {
         fieldValues[winPlatform] = "19208";
         updateFieldValues();
         $('.winbox-container').css('background-color','#2DAAE1');
-        $('.winbox-container').css('background-image','url(assets/images/winbox-twitter.svg)');
+        $('.winbox-container').css('background-image','url(../assets/images/winbox-twitter.svg)');
       }
 
       if ( $(this).hasClass('platform-link--yelp') ) {
@@ -123,10 +139,52 @@ $(window).bind("load", function() {
         // updateFieldValues({ [winPlatform]: "19213" })
         // updateFieldValues({ [starRating]: 4, [winPlatform]: '19213' })
         $('.winbox-container').css('background-color','#C61B00');
-        $('.winbox-container').css('background-image','url(assets/images/winbox-yelp.svg)');
+        $('.winbox-container').css('background-image','url(../assets/images/winbox-yelp.svg)');
       }
 
       console.log("Win Platform set to: " + fieldValues[winPlatform]);
+
+      return false;
+    });
+
+
+
+$('.picker-item').click(function(){
+  $(this).siblings().removeClass('picker-item--active');
+  $(this).addClass('picker-item--active');
+});
+
+
+
+    $('.star-rating').click(function(){
+
+      fieldValues[winType] = "19205";
+
+      $('.star-rating').removeClass('star-rating--active');
+      $(this).addClass('star-rating--active');
+
+      if ( $(this).hasClass('star-rating--3') ) {
+        fieldValues[reviewUpgradedTo] = "19202";
+        updateFieldValues();
+        // $('.winbox-container').css('background-color','#3C5B9B');
+        // $('.winbox-container').css('background-image','url(assets/images/winbox-facebook.svg)');
+      }
+
+      if ( $(this).hasClass('star-rating--4') ) {
+        fieldValues[reviewUpgradedTo] = "19201";
+        updateFieldValues();
+        // $('.winbox-container').css('background-color','#3C5B9B');
+        // $('.winbox-container').css('background-image','url(assets/images/winbox-facebook.svg)');
+      }
+
+      if ( $(this).hasClass('star-rating--5') ) {
+        fieldValues[reviewUpgradedTo] = "19200";
+        updateFieldValues();
+        // $('.winbox-container').css('background-color','#3C5B9B');
+        // $('.winbox-container').css('background-image','url(assets/images/winbox-facebook.svg)');
+      }
+
+      console.log("Star Rating set to: " + fieldValues[reviewUpgradedTo]);
 
       return false;
     });

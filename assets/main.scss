@@ -9,12 +9,20 @@
 
 body {
   text-align: center;
-  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", Helvetica, "Helvetica Neue", sans-serif;
+  color: #555;
 }
 
 a, a:visited {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+}
+p,h4 {
+  margin-bottom: 1rem;
 }
 
 /* Platform switcher */
@@ -23,7 +31,8 @@ a, a:visited {
   color: #aaa;
 }
 
-.platform-link--active {
+.platform-link--active,
+.star-rating--active {
   border-bottom-width: 4px;
   border-bottom-style: solid;
   border-bottom-color: #ddd;
@@ -34,10 +43,9 @@ a, a:visited {
 
 .winbox-guides {
   width: 668px;
-  height: 668px;
-  background: url(images/winbox-guides.png) no-repeat;
-  margin: 0 auto;
-  padding-top: 76px;
+  // background: url(images/winbox-guides.png) no-repeat;
+  margin: 0 auto 32px;
+  // padding-top: 76px;
 }
 
 .winbox-container {
@@ -77,23 +85,28 @@ a, a:visited {
 /* Widget */
 
 .jira-creator-link {
-  
+
 }
 
 #atlwdg-trigger {
   display: none;
 }
-#atlwdg-trigger.atlwdg-TOP {
-  top: auto;
-  left: auto;
-  bottom: 16px;
-  right: 16px;
-  display: inline-block;
-  position: absolute;
+// #atlwdg-trigger.atlwdg-TOP {
+//   top: auto;
+//   left: auto;
+//   bottom: 16px;
+//   right: 16px;
+//   display: inline-block;
+//   position: absolute;
+// }
+
+#start #atlwdg-trigger {
+  display: none;
 }
 
-
 /* Image hackery */
+
+
 
 #img-out {
   display:none;
@@ -101,9 +114,64 @@ a, a:visited {
 #downloader {
   display:none;
 }
-#btnSave {
+.button-submit {
   border: 3px double black;
   padding: 10px;
   background: #ffa;
   display: inline-block;
+}
+
+
+
+
+
+// picker
+
+.picker {
+  margin: 64px 0;
+  h4 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 32px 0;
+  }
+  .picker-item--icon {
+    border-radius: 50%;
+    height: 90px;
+    width:  90px;
+    background: #eee;
+    margin: 0 auto 24px;
+  }
+  .picker-item--label {
+    font-size: 14px;
+    // font-weight: bold;
+  }
+}
+  .picker-item {
+    padding: 24px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 0 12px;
+    width: 240px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: transparent;
+    border-style: solid;
+    &:hover {
+      border: 2px solid orange;
+      cursor: pointer;
+    }
+  }
+  .picker-item.picker-item--active {
+    border: 2px solid orange;
+  }
+
+
+// Misc.
+
+a.back_to_the_start {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  color: #aaa;
+  font-size: 24px;
 }
