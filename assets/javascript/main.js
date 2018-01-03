@@ -1,27 +1,3 @@
-// Facebook = 19207
-// Twitter = 19208
-// Yelp = 19213
-
-    // fieldValues: {
-    //    'customfield_15628' : winPlatform,
-    //
-    // }
-       // summary : 'XOXOX for new website designs',
-       // 'starrating' : null
-
-// var winPlatform = "19208";
-
-        // 'customfield_16107' : '19203', // ==== Win Type : Great Interaction ====
-        // 'customfield_16107' : '19204', // ==== Win Type : New Customer via HubT ====
-        // 'customfield_16107' : '19205', // ==== Win Type : Review Upgraded ====
-
-        // 'customfield_21201' : '19200', // ==== Review Rating : 5 ====
-        // 'customfield_21201' : '19201', // ==== Review Rating : 4 ====
-        // 'customfield_21201' : '19202', // ==== Review Rating : 3 ====
-        // var reviewUpgradedTo = 'customfield_21201';
-
-
-
 var winPlatform = 'customfield_15628';
 var winType = 'customfield_16107';
 var reviewUpgradedTo = 'customfield_21201';
@@ -109,8 +85,8 @@ $(window).bind("load", function() {
 
     // Set default platform on page load
     setTimeout(function() {
-      $('.platform-link--facebook').trigger('click');
-      $('.star-rating--3').trigger('click');
+      $('#interaction .platform-link--facebook').trigger('click');
+      // $('.star-rating--3').trigger('click');
     },10);
 
 
