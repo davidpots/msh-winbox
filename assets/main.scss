@@ -20,9 +20,23 @@ a, a:visited {
 
 h1 {
   font-size: 64px;
+  color: #333;
 }
-p,h4 {
+p {
   margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 8px;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 1.5rem;
 }
 
 /* Platform switcher */
@@ -115,10 +129,12 @@ p,h4 {
   display:none;
 }
 .button-submit {
-  border: 3px double black;
-  padding: 10px;
-  background: #ffa;
+  padding: 10px 20px;
+  background: #fff;
   display: inline-block;
+  border-radius: 32px;
+  border: 1px solid #888;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.2);
 }
 
 
@@ -128,17 +144,13 @@ p,h4 {
 // picker
 
 .picker {
-  margin: 64px 0;
+  margin: 32px 0;
   h4 {
     font-size: 24px;
     font-weight: normal;
-    margin: 0 0 32px 0;
+    margin: 0 0 18px 0;
   }
   .picker-item--icon {
-    border-radius: 50%;
-    height: 90px;
-    width:  90px;
-    background: #eee;
     margin: 0 auto 24px;
   }
   .picker-item--label {
@@ -174,4 +186,9 @@ a.back_to_the_start {
   left: 32px;
   color: #aaa;
   font-size: 24px;
+}
+
+.picker-icon {
+  display: block;
+  width: 100%;
 }
