@@ -4,7 +4,7 @@ var reviewUpgradedTo = 'customfield_21201';
 var fieldValues = { [winPlatform] : "19208",
                     summary : "New Win",
                     [winType] : "19203",
-                    [reviewUpgradedTo] : "19201" };
+                    [reviewUpgradedTo] : "" };
 
 window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
 
