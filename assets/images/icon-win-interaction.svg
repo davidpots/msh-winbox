@@ -6,7 +6,7 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="icon-win-interaction">
-            <g id="Group" transform="translate(17.000000, 20.000000)">
+            <g id="Group" opacity="0.400000006" transform="translate(17.000000, 20.000000)">
                 <path d="M6.5,64.562 L53.375,64.562 C53.375,64.562 62.75,80.188 70.562,78.625 C69,72.375 67.953,64.562 67.953,64.562 L81.5,64.562 C84.09,64.562 86.188,62.465 86.188,59.875 L86.188,6.75 C86.188,4.16 84.09,2.062 81.5,2.062 L6.5,2.062 C3.91,2.062 1.812,4.16 1.812,6.75 L1.812,59.875 C1.812,62.465 3.91,64.562 6.5,64.562" id="Fill-1" fill="#C5E4FA"></path>
                 <polyline id="Fill-2" fill="#E3F2FF" points="57.874 58.437 85.312 31 84.437 10 36 58.437"></polyline>
                 <polyline id="Fill-3" fill="#E3F2FF" points="22.125 59.813 19 58.25 75.25 2 82.281 2 83.656 3.86 23.688 63.813"></polyline>
@@ -30,6 +30,11 @@
                 <path d="M20.562,28.625 L54.938,28.625 C57.02,28.625 57.02,25.5 54.938,25.5 L20.562,25.5 C18.48,25.5 18.48,28.625 20.562,28.625" id="Fill-21" fill="#8D6C9F"></path>
                 <path d="M62.75,36.438 C62.75,35.574 62.051,34.875 61.188,34.875 L20.562,34.875 C18.48,34.875 18.48,38 20.562,38 L61.188,38 C62.051,38 62.75,37.301 62.75,36.438" id="Fill-22" fill="#8D6C9F"></path>
             </g>
+            <rect id="Rectangle-29" fill="#FFFFFF" opacity="0.471354167" transform="translate(60.711905, 55.867075) rotate(-21.000000) translate(-60.711905, -55.867075) " x="14.2119052" y="43.8670748" width="93" height="24"></rect>
+            <text id="PLACEHOLDER" opacity="0.400000006" transform="translate(60.891089, 56.333865) rotate(-21.000000) translate(-60.891089, -56.333865) " font-family="GothamBlack, Gotham Black" font-size="8" font-weight="700" letter-spacing="1" fill="#333333">
+                <tspan x="24.3910892" y="58.833865">PLACEHOLDE</tspan>
+                <tspan x="91.3590892" y="58.833865">R</tspan>
+            </text>
         </g>
     </g>
 </svg>

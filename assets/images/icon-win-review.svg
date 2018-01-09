@@ -8,7 +8,7 @@
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="icon-win-review">
-            <g id="Group" transform="translate(11.000000, 7.000000)">
+            <g id="Group" opacity="0.300000012" transform="translate(11.000000, 7.000000)">
                 <g id="Add-to-Favorites">
                     <path d="M93.75,43.203 C93.566,42.652 93.078,42.262 92.5,42.203 L61.25,39.359 L49.75,11.234 C49.242,10.043 47.555,10.043 47.047,11.234 L35.547,39.359 L4.297,42.203 C3.02,42.328 2.508,43.918 3.469,44.766 L27.047,65.391 L19.797,95.078 C19.535,96.328 20.887,97.293 21.984,96.641 L48.312,80.25 L74.719,96.594 C75.816,97.246 77.168,96.281 76.906,95.031 L69.656,65.344 L93.234,44.719 C93.691,44.359 93.895,43.766 93.75,43.203" id="Fill-1" fill="#F9E3AE"></path>
                     <g id="Group-5" transform="translate(0.000000, 7.000000)">
@@ -28,6 +28,11 @@
                     <path d="M50,41.5 C50,39.418 46.875,39.418 46.875,41.5 L46.875,54 L34.375,54 C32.293,54 32.293,57.125 34.375,57.125 L46.875,57.125 L46.875,69.625 C46.875,71.707 50,71.707 50,69.625 L50,57.125 L62.5,57.125 C64.582,57.125 64.582,54 62.5,54 L50,54" id="Fill-12" fill="#8D6C9F"></path>
                 </g>
             </g>
+            <rect id="Rectangle-29" fill="#FFFFFF" opacity="0.471354167" transform="translate(61.711905, 55.867075) rotate(-21.000000) translate(-61.711905, -55.867075) " x="15.2119052" y="43.8670748" width="93" height="24"></rect>
+            <text id="PLACEHOLDER" opacity="0.400000006" transform="translate(61.891089, 56.333865) rotate(-21.000000) translate(-61.891089, -56.333865) " font-family="GothamBlack, Gotham Black" font-size="8" font-weight="700" letter-spacing="1" fill="#333333">
+                <tspan x="25.3910892" y="58.833865">PLACEHOLDE</tspan>
+                <tspan x="92.3590892" y="58.833865">R</tspan>
+            </text>
         </g>
     </g>
 </svg>
